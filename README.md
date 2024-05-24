@@ -1,4 +1,3 @@
-"# xbot" 
 # X Bot
 
 This repository contains a Python script that automates posting to X (formerly known as Twitter) and Discord. The script uses the OpenAI API to generate creative messages, fetches metadata and images, and posts them to social media.
