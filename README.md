@@ -1,12 +1,12 @@
-# X Bot
-
-This repository contains a Python script that automates posting to X (formerly known as Twitter) and Discord. The script uses the OpenAI API to generate creative messages, fetches metadata and images, and posts them to social media.
+# xBot
+xBot is a Python script designed to automate content publication on X and Discord. It leverages the OpenAI API to generate concise, creative messages based on on‐chain NFT metadata, fetches associated images, applies a randomized background color, and posts the results on social media.
 
 ## Features
-- Automated posting to X and Discord
-- Metadata fetching and image processing
-- Creative message generation using OpenAI
-- Supports testing mode for safe testing
+- Automated Posting: Schedules and publishes multiple posts per day to both X and Discord, with a “test” mode for safe dry runs.
+- Creative Message Generation: Queries OpenAI to craft short, on-brand tweets using a set of filtered NFT traits (e.g., Fur, Hair, Hat).
+- Metadata & Image Handling: Pulls JSON metadata from a configurable endpoint, downloads the PNG image, then composites it over a random hex-color background.
+- Configurable Rate Limits: Allows you to specify how many posts to send, minimum intervals between posts, and separate modes for testing versus production.
+- CSV Logging & Preview: Saves each generated post (metadata, prompt, and cleaned message) to a date-stamped CSV—and prints a simple table of edition links and final messages once the run completes.
 
 ## Installation
 
